@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>LoveGoBuy spreadsheet | Product Links, Fit &amp; QC Guide</title>
+<meta name="description" content="Browse ten CAFANS categories and use this LoveGoBuy spreadsheet guide to compare source links, fit measurements, QC photos and the full cost of a parcel.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LoveGoBuy spreadsheet | Product Links, Fit &amp; QC Guide">
+<meta property="og:description" content="A category directory and practical guide to checking product variants, measurements, QC photos and shipping costs.">
+<meta name="theme-color" content="#262342">
+<link rel="icon" href="https://www.cafans.com/favicon.ico">
+<!--
+Research used accessible web results for LoveGoBuy spreadsheet. Bing's first-page order could not be verified.
+Domains and observed content angles:
+rep.tools: original marketplace links and link conversion.
+lovegobuy.cc: product search, category shortcuts and QC-led discovery.
+lovegobuy.io: fashion catalog and dated source records.
+sheetslovegobuy.com: subcategories and item-specific inspection notes.
+lovegobuy.net: separate category pathways and listing comparisons.
+lovego-buy.courses: spreadsheet columns and shortlist organization.
+lovegobuy-sheet.store: item IDs and variant selection.
+lovego.org: purchase workflow, inspection and shipping preparation.
+lovegobuyofficial.com: departments, buying guides and budgets.
+lovegobuy.buzz: cost columns, status tracking and worksheet examples.
+
+Secondary targets: LoveGoBuy finds, LoveGoBuy product links, LoveGoBuy QC guide, LoveGoBuy shipping checklist.
+Long-tail targets:
+how to use a LoveGoBuy spreadsheet, LoveGoBuy shoe size comparison, LoveGoBuy sneaker insole measurements,
+LoveGoBuy sneaker QC photos, LoveGoBuy hoodie chest measurements, LoveGoBuy sweater sleeve length,
+LoveGoBuy T-shirt size chart, LoveGoBuy jacket lining photos, LoveGoBuy pants waist and rise,
+LoveGoBuy cap circumference, LoveGoBuy matching set sizing, LoveGoBuy jersey fit comparison,
+LoveGoBuy bag dimensions and strap drop, LoveGoBuy bracelet wrist sizing, how to find the original Weidian listing,
+how to record Taobao product links, how to check a 1688 product variant, how to check if a product link is current,
+what to save in a shopping spreadsheet, how to compare warehouse QC photos, how to request a measurement photo,
+how to estimate international parcel cost, actual weight vs volumetric weight, how to track the return deadline.
+-->
+<style>
+:root{color-scheme:light;--paper:#f9f7ff;--ink:#262342;--muted:#524d65;--line:#d9d4e9;--accent:#e7f989;--panel:#eee9ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid #6747c7;outline-offset:4px}
+.wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+header{background:var(--ink);color:white}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:62px}
+.brand{font-weight:800;text-decoration:none}
+header span{font-size:.86rem;color:#e1ddf5;text-align:right}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{line-height:1.12}
+h1{max-width:12ch;font-size:clamp(2.65rem,8vw,6rem);letter-spacing:-.075em}
+h2{font-size:clamp(1.65rem,4vw,2.5rem);letter-spacing:-.045em}
+h3{font-size:1.25rem}
+p{margin-block-start:.7rem}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:1rem;padding-block:1rem}
+.intro{background:var(--panel);padding:clamp(1.2rem,5vw,3.25rem);display:grid;align-content:center;justify-items:start}
+.intro p{max-width:48ch;color:var(--muted)}
+.button{display:inline-block;background:var(--accent);font-weight:750;margin-top:1.1rem;padding:.6rem .95rem;text-decoration:none;border:1px solid var(--ink)}
+.button:hover{background:white}
+figure{min-width:0;background:white;border:1px solid var(--line)}
+img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#f1eff5}
+figcaption{padding:.65rem .85rem;color:var(--muted);font-size:.88rem}
+section{margin-block:2.5rem}
+.categories,.gallery{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.55rem}
+.categories{grid-template-columns:repeat(5,minmax(0,1fr))}
+.categories a{display:flex;align-items:center;justify-content:space-between;gap:.35rem;height:100%;min-height:3.2rem;padding:.55rem .7rem;border:1px solid var(--line);background:white;text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+.categories a:hover{background:var(--accent)}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+article{background:white;border-top:4px solid #7255bf;padding:1rem}
+article p,.note{color:var(--muted)}
+dl{display:grid;grid-template-columns:minmax(8rem,1fr) 3fr;margin:1rem 0 0;background:white;border:1px solid var(--line)}
+dt,dd{margin:0;padding:.7rem;border-bottom:1px solid var(--line)}
+dt{font-weight:750;background:var(--panel)}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}
+summary{cursor:pointer;font-weight:750}
+details p{max-width:70ch}
+footer{background:var(--ink);color:white;padding-block:1.25rem}
+@media(max-width:800px){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.articles{grid-template-columns:1fr}}
+@media(max-width:580px){.hero{grid-template-columns:1fr}.hero img{aspect-ratio:4/3}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}dl{grid-template-columns:1fr}dd{padding-bottom:.9rem}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "name":"LoveGoBuy spreadsheet | Product Links, Fit & QC Guide",
+      "description":"Browse ten CAFANS categories and use this LoveGoBuy spreadsheet guide to compare source links, fit measurements, QC photos and the full cost of a parcel.",
+      "inLanguage":"en"
+    },
+    {
+      "@type":"FAQPage",
+      "inLanguage":"en",
+      "mainEntity":[
+        {"@type":"Question","name":"What is a LoveGoBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"It is a list of shopping finds that pairs product links with notes such as size, colour, seller and quality-control photos. This independent guide offers a sample worksheet and links to CAFANS categories."}},
+        {"@type":"Question","name":"How do I tell whether a product link is current?","acceptedAnswer":{"@type":"Answer","text":"Open the original listing and check the seller, item ID and availability of the exact size and colour you saved. Record the date you checked it so you know when to verify it again."}},
+        {"@type":"Question","name":"Can QC photos establish authenticity?","acceptedAnswer":{"@type":"Answer","text":"QC photos help you assess visible condition, measurements and the selected variant. For authenticity, look for seller documentation and qualified authentication where appropriate."}},
+        {"@type":"Question","name":"What should I include in my shipping budget?","acceptedAnswer":{"@type":"Answer","text":"Include the item price, domestic delivery, applicable service fees, international shipping and any applicable taxes or duties. Confirm the actual charges and the carrier's billable weight before paying."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/zzhla/">
+</head>
+<body>
+<header>
+  <div class="wrap"><a class="brand" href="https://www.cafans.com">www.cafans.com</a><span>Independent shopping guide</span></div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div class="intro">
+      <h1>LoveGoBuy spreadsheet</h1>
+      <p>A LoveGoBuy spreadsheet helps you keep product links, sizing and inspection notes together. Browse by category on CAFANS, then use the worksheet below to compare the exact items you’re considering.</p>
+      <a class="button" href="https://www.cafans.com">Browse CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000" width="640" height="640" fetchpriority="high" loading="eager" alt="Side profile of a white Nike Air Force 1 ’07 low-top sneaker">
+      <figcaption>Nike Air Force 1 ’07 · Footwear reference</figcaption>
+    </figure>
+  </div>
+
+  <section aria-labelledby="categories">
+    <h2 id="categories">Browse CAFANS by category</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Shoes <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Jackets <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pants/Shorts <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Headwear <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underwear/underpants <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Jersey <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessories <span aria-hidden="true">↗</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="references">
+    <h2 id="references">What to look for in product photos</h2>
+    <p class="note">These brand photographs illustrate inspection points. Check current catalog listings for availability and item details.</p>
+    <ul class="gallery">
+      <li><figure>
+        <img src="https://i.ebayimg.com/images/g/IzUAAeSwx~BpjTw-/s-l1200.webp" width="480" height="480" loading="lazy" decoding="async" alt="Brown Louis Vuitton Speedy 25 Monogram bag with light leather handles">
+        <figcaption>Louis Vuitton bag · Ask for the base width and handle drop.</figcaption>
+      </figure></li>
+      <li><figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1767032160/857596_3HBIM_2566_003_100_0000_Light-gorra-de-beisbol-de-canvas-gg.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Model wearing a beige and brown Gucci GG canvas baseball cap">
+        <figcaption>Gucci cap · Check the adjustment range and crown depth.</figcaption>
+      </figure></li>
+      <li><figure>
+        <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Hermès Clic H enamel bracelet with a gold-tone H clasp">
+        <figcaption>Hermès bracelet · Compare the inner circumference with your wrist.</figcaption>
+      </figure></li>
+      <li><figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/593J696U3012C900_SBG_E01?%24r9x10_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=600&amp;qlt=78&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Black Dior Oblique T-shirt with a tonal pattern and crew neck">
+        <figcaption>Dior T-shirt · Compare the chest width and back length.</figcaption>
+      </figure></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="articles">
+    <h2 id="articles">Buying guides</h2>
+    <div class="articles">
+      <article>
+        <h3>Save the original product link</h3>
+        <p>When comparing LoveGoBuy finds, record the original Weidian, Taobao or 1688 listing and its item ID. Save one row per size and colour combination. If two listings use the same photos, compare their option menus and size charts separately.</p>
+      </article>
+      <article>
+        <h3>Compare measurements and QC photos</h3>
+        <p>Measure a piece you already wear. For shoes, check insole length in centimetres. For hoodies and jerseys, compare chest width and body length. For trousers, note the waist, rise and inseam. In warehouse quality-control (QC) photos, look for the size tag and ask for a ruler photo if a measurement is unclear.</p>
+      </article>
+      <article>
+        <h3>Build a shipping checklist</h3>
+        <p>Log the parcel weight and box dimensions before comparing quotes. Check whether the carrier bills by actual or volumetric weight. Record the estimated total alongside the return deadline so you can resolve any inspection issue before dispatch.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="worksheet">
+    <h2 id="worksheet">What to put in each spreadsheet row</h2>
+    <dl>
+      <dt>Source</dt><dd>Original marketplace link, seller, item ID and date checked.</dd>
+      <dt>Variant</dt><dd>Exact colour, size, size chart and your target measurements in centimetres.</dd>
+      <dt>Inspection</dt><dd>Photos reviewed, visible issues and any extra angles or measurements requested.</dd>
+      <dt>Order cost</dt><dd>Item amount and currency, domestic delivery, fees and estimated international shipping.</dd>
+      <dt>Status</dt><dd>Shortlisted, ordered, awaiting inspection or dispatched, with the return deadline where available.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Frequently asked questions</h2>
+    <details open>
+      <summary>What is a LoveGoBuy spreadsheet?</summary>
+      <p>It is a list of shopping finds that pairs product links with notes such as size, colour, seller and quality-control photos. This independent guide offers a sample worksheet and links to CAFANS categories.</p>
+    </details>
+    <details>
+      <summary>How do I tell whether a product link is current?</summary>
+      <p>Open the original listing and check the seller, item ID and availability of the exact size and colour you saved. Record the date you checked it so you know when to verify it again.</p>
+    </details>
+    <details>
+      <summary>Can QC photos establish authenticity?</summary>
+      <p>QC photos help you assess visible condition, measurements and the selected variant. For authenticity, look for seller documentation and qualified authentication where appropriate.</p>
+    </details>
+    <details>
+      <summary>What should I include in my shipping budget?</summary>
+      <p>Include the item price, domestic delivery, applicable service fees, international shipping and any applicable taxes or duties. Confirm the actual charges and the carrier's billable weight before paying.</p>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap"><a href="https://www.cafans.com">www.cafans.com</a></div></footer>
+</body>
+</html>
